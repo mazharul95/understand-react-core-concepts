@@ -8,15 +8,11 @@ const Watch = () => {
         const nextSteps = steps + 1;
         setSteps(nextSteps);
     }
-    useEffect(() =>{
-        console.log(steps);
-    }, [steps])
-
     return (
         <div style={{border: '2px solid red', margin: '10px'}}>
             <h2>this is my smart Watch!</h2>
             <p>Steps: {steps}</p>
-            <button onClick={increaseSteps}>De Dour......</button>
+            <button onClick={increaseSteps}> Count ...</button>
             <Dial steps={steps}></Dial>
         </div>
     );
